@@ -4,11 +4,21 @@ import { List, Item } from './Statistics.styled';
 function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <List>
-      <Item>Good: {good} </Item>
-      <Item>Neutral: {neutral}</Item>
-      <Item>Bad: {bad}</Item>
-      <Item>Total: {total}</Item>
-      <Item>Positive feedback: {positivePercentage} %</Item>
+      <Item>
+        Good: <span>{good}</span>
+      </Item>
+      <Item>
+        Neutral: <span>{neutral}</span>
+      </Item>
+      <Item>
+        Bad: <span>{bad}</span>
+      </Item>
+      <Item>
+        Total: <span>{total}</span>
+      </Item>
+      <Item>
+        Positive feedback: <span>{positivePercentage} %</span>
+      </Item>
     </List>
   );
 }
